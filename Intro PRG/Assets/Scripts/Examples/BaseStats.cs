@@ -150,7 +150,7 @@ namespace Stats
         void Revive()
         {
             //Reset all the things
-            deathText.text = "";
+            deathText.text = "Nice one dummy, you ded";
             isDead = false;
             characterStatus[0].currentValue = characterStatus[0].maxValue;
 
