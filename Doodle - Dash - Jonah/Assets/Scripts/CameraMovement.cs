@@ -6,7 +6,7 @@ public class CameraMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float speed = 5f;
-
+    public PlayerControls playerDead;
 
 
 
@@ -20,10 +20,15 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        Vector3 vel = rb.velocity;
-        vel.x = speed;
-        rb.velocity = vel;
-
+        if (!playerDead)
+        {
+            Vector3 vel = rb.velocity;
+            vel.x = speed;
+            rb.velocity = vel;
+        }
+        else if(playerDead)
+        {
+            
+        }
     }
 }
