@@ -7702,13 +7702,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c4321d84b3ad443b9549f6943a218d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 1518236766}
   gravity: 20
   speed: 5
   sprintspeed: 10
   crouchspeed: 2.5
   jumpSpeed: 8
   moveDirection: {x: 0, y: 0, z: 0}
+  playerInput:
+    Forward: 0
+    Left: 0
+    Right: 0
+    Backwards: 0
+    Jump: 0
+    Sprint: 0
+    Crouch: 0
 --- !u!143 &1518236766
 CharacterController:
   m_ObjectHideFlags: 0
